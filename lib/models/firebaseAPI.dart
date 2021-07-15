@@ -14,7 +14,7 @@ class FirebaseApi {
 
     final urls = await _getDownloadLinks(result.items);
 
-
+//changing files values as list
     return urls
         .asMap()
         .map((index, url) {
@@ -27,7 +27,7 @@ class FirebaseApi {
         .values
         .toList();
   }
-
+//function to download image and saving it in local storage
  static Future downloadFile(Reference ref) async {
     Directory directory;
     try {
@@ -51,7 +51,7 @@ class FirebaseApi {
     } catch (e) {}
 
   }
-
+//managing permission from android whther is granted or not
   static Future<bool> _requestPermission(Permission permission) async {
     if (await permission.isGranted) {
       return true;

@@ -2,6 +2,10 @@ import 'package:aveosoft_demo/models/firebasefile.dart';
 import 'package:aveosoft_demo/models/firebaseAPI.dart';
 import 'package:flutter/material.dart';
 
+
+
+//on tapping of image it is opened to view
+
 class ImagePage extends StatelessWidget {
   final FirebaseFile file;
 

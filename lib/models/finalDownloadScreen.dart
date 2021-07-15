@@ -2,6 +2,8 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
+//this is to access the folder where the images are going to be downloaded and access them and showing them as list here i have used card
+
 final Directory _photoDir = Directory(
     '/storage/emulated/0/Android/data/com.pratishodhi.aveosoft_demo/files');
 
@@ -89,8 +91,8 @@ class _MyImageList extends State<MyImageList> {
             child: Container(
               padding: EdgeInsets.only(bottom: 60.0),
               child: Text(
-                "There are no images here :) ",
-                style: TextStyle(fontSize: 18.0),
+                "There are no images here : ) ",
+                style: TextStyle(fontSize: 30.0),
               ),
             ),
           ),

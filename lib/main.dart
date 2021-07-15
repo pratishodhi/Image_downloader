@@ -46,7 +46,7 @@ class _MainPageState extends State<MainPage> {
   ) =>
       Scaffold(
         appBar: AppBar(
-          actions: [
+          actions: [                     //download icon on right top for accessing app download file
             IconButton(
               icon: Icon(Icons.file_download),
               onPressed: () {
@@ -61,7 +61,7 @@ class _MainPageState extends State<MainPage> {
           title: Text(MyApp.title),
           centerTitle: true,
         ),
-        body: FutureBuilder<List<FirebaseFile>>(
+        body: FutureBuilder<List<FirebaseFile>>(                       //accessing firebase images in storage while showing linear progress bar
           future: futureFiles,
           builder: (context, snapshot) {
             switch (snapshot.connectionState) {
@@ -82,7 +82,7 @@ class _MainPageState extends State<MainPage> {
                       //buildHeader(files.length),
                       const SizedBox(height: 0),
                       Expanded(
-                        child: GridView.builder(
+                        child: GridView.builder(                                // to show images in a grid like structure
                           gridDelegate:
                               SliverGridDelegateWithFixedCrossAxisCount(
                                   crossAxisCount: 3,
@@ -92,7 +92,7 @@ class _MainPageState extends State<MainPage> {
                           padding: const EdgeInsets.all(5),
                           itemCount: files.length,
                           itemBuilder: (context, index) {
-                            final file = files[index];
+                            final file = files[index];         //getting all images
                             return buildFile(context, file);
                           },
                         ),
@@ -123,7 +123,7 @@ class _MainPageState extends State<MainPage> {
           ),
         ),
         footer: GridTileBar(
-            leading: file.isDownloaded
+            leading: file.isDownloaded                 //checking whether file is downloaded or not to show respective icon on image hence used ternary operator
                 ? IconButton(
                     icon: Icon(
                       Icons.check_circle_sharp,
@@ -144,7 +144,7 @@ class _MainPageState extends State<MainPage> {
                         file.isDownloaded = true;
                       });
 
-                      final snackBar = SnackBar(
+                      final snackBar = SnackBar(                                   //notifying that image has been downloaded
                         content: Text('Downloaded ${file.name}'),
                       );
                       ScaffoldMessenger.of(context).hideCurrentSnackBar();
