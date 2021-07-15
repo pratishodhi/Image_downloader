@@ -18,7 +18,7 @@ class ImagePage extends StatelessWidget {
       appBar: AppBar(
         title: Text(file.name),
         centerTitle: true,
-        actions: [
+        /*actions: [
           IconButton(
             icon: Icon(Icons.file_download),
             onPressed: () async {
@@ -32,7 +32,7 @@ class ImagePage extends StatelessWidget {
             },
           ),
           const SizedBox(width: 12),
-        ],
+        ],*/
       ),
       body: isImage
           ? Image.network(
