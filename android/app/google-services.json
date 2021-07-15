@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "695138689924",
+    "project_id": "aveosoftdemo",
+    "storage_bucket": "aveosoftdemo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:695138689924:android:89698018213bbd5819b3d1",
+        "android_client_info": {
+          "package_name": "com.pratishodhi.aveosoft_demo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "695138689924-evuvf70uqi9jhklm66ggcb27ee0q2uro.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARBmIHaWPxJc4AeHPpTcXfIGdNxhG_AGM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "695138689924-evuvf70uqi9jhklm66ggcb27ee0q2uro.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
