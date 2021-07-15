@@ -50,7 +50,7 @@ class _MyImageList extends State<MyImageList> {
             title: Text("Downloaded"),
           ),
           body: Container(
-            padding: EdgeInsets.only(bottom: 60.0),
+            padding: EdgeInsets.only(bottom: 40.0),
             child: ListView.builder(
               padding: const EdgeInsets.all(8.0),
               itemCount: imageList.length,
@@ -89,7 +89,7 @@ class _MyImageList extends State<MyImageList> {
             child: Container(
               padding: EdgeInsets.only(bottom: 60.0),
               child: Text(
-                "Sorry, No Images were Found.",
+                "There are no images here :) ",
                 style: TextStyle(fontSize: 18.0),
               ),
             ),
