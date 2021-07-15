@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "14378289679",
+    "project_id": "delhimarket-b383f",
+    "storage_bucket": "delhimarket-b383f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:14378289679:android:95a342276bb070c6aff17a",
+        "android_client_info": {
+          "package_name": "com.pratishodhi.shop_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "14378289679-p9pmgke29if4jcc9dm7tcjs26k6vfebs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2L_I99-FE9wxtlxvho--2Ywr96zlyQhc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "14378289679-p9pmgke29if4jcc9dm7tcjs26k6vfebs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
